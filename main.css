@@ -1,0 +1,336 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: rgb(21, 28, 35); */
+  background-image: linear-gradient(to right, #0f2027, #2C3E50);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  padding: 0px 100px;
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(to right, #0f2027, #2C3E50);
+  z-index: 2;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  width: 18%;
+
+}
+
+.logo:hover {
+  -webkit-box-reflect: below -50px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+
+
+.nav1, .nav2, .nav3, .nav4 {
+  text-decoration: none;
+  color: #dcdcdc;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.nav1:hover, .nav2:hover, .nav3:hover, .nav4:hover {
+  border-bottom: solid;
+  border-bottom-width: 1px;
+  transition: all .2s ease-in-out;
+  color: rgb(21, 28, 35);
+  background-color: #dcdcdc;
+  border-radius: 1px;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#home {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 400px;
+}
+
+
+.left-div {
+  display: flex;
+  flex-direction: column;
+  animation: 1s ease-out 0s 1 slideInLeft;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.welcome {
+  color: #dcdcdc;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+h1 {
+  color: #dcdcdc;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 62px;
+  line-height: 1em;
+  width: 60%;
+  font-weight: 600;
+}
+
+.left-div > button {
+  width: 180px;
+  height: 45px;
+  border-radius: 30px;
+  background: linear-gradient(95deg, #0f2027 11.2%, #2C3E50 91.1%);
+  border: none;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  margin-top: 20px;
+}
+
+button > a {
+  text-decoration: none;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px;
+  color: #dcdcdc;
+  font-weight: 300;
+}
+
+.right-div {
+  display: flex;
+  animation: 1s ease-out 0s 1 slideInRight;
+}
+
+.shape {
+  border-radius: 50%;
+  border: none;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to right, #0f2027, #2C3E50);
+  background-image: url(img/Background\ Large.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#category {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 400px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);}
+
+h2 {
+  color: #dcdcdc;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 50px;
+  line-height: 1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+
+#categories {
+  display: flex;
+  width: 1200px;
+  overflow: auto;
+  white-space: nowrap;
+  position: relative;
+  scrollbar-width: none !important;
+  margin-top: 50px;
+}
+
+.kaf, .agb, .cap, .sui, .pan, .shi, .fab {
+  color:#191919;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: white;
+  font-family:  Sinhala Mn;
+  width: 300px;
+  height: 50px;
+  border-radius: 5px;
+  position: relative;
+  left: 15%;
+  bottom: 15%;
+}
+
+.img1, .img2, .img3, .img4, .img5, .img6, .img7 {
+  display: flex;
+  border-radius: 30px;
+  padding: 10px;
+  width: 400px;
+  height: 500px;
+}
+
+.kaftan {
+  display: flex;
+}
+
+#shop {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 300px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container1 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px 40px 50px 40px;
+  width: 100%;
+  box-shadow: 0px 8px 0px hsla(249, 10%, 26%, 0.25);
+  margin-top: 50px;
+}
+
+input {
+  border-radius: 5px;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color:#dcdcdc;
+  height: 50px;
+  width: 100%;
+  margin: 30px 0px 10px 0px;
+  padding: 0px 0px 0px 30px;
+  font-weight: 700;
+  font-size: 12px;
+  color: rgb(78, 77, 84);
+}
+
+select {
+  background-color: white;
+  border-color:#dcdcdc;
+  border-radius: 5px;
+  border-width: 1.5px;
+  border-style: solid;
+  height: 50px;
+  width: 100%;
+  margin: 30px 0px 10px 0px;
+  padding: 0px 0px 0px 30px;
+  font-weight: 700;
+  font-size: 12px;
+  color: rgb(78, 77, 84);
+}
+
+::placeholder {
+  color: rgb(78, 77, 84);
+}
+
+.container1 button {
+  width: 100%;
+  height: 55px;
+  color: white;
+  background-color:#2C3E50;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 5px;
+  border-style: none;
+  letter-spacing: 2px;
+  margin: 30px 0px 20px 0px;
+  border-bottom: 4px solid rgba(128, 128, 128, 0.265);
+}
+
+#submission {
+  display: none;
+}
+
+#submission.show {
+  display: block;
+  color:#0f2027;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px 20px;
+}
+
+.by {
+  color:#191919;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  text-align: center;
+  margin: auto;
+}
+
+a {
+  color:#191919;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+#contact {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 300px;
+  background-image: linear-gradient(to right, #0f2027, #2C3E50);
+}
+
+#contact > img {
+  display: flex;
+  width: 3%;
+}
+
+
+
+
+
+

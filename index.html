@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXURY LIFESTYLE</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<header>
+  <nav>
+      <img src="img/Logo.png" class="logo">
+  </nav>
+  <nav class="right">
+      <a href="/#home" class="nav1">HOME</a>
+      <a href="/#category" class="nav2">PRODUCT CATEGORY</a>
+      <a href="/#shop" class="nav3">SHOP NOW</a>
+      <a href="/#contact" class="nav4">CONTACT</a>
+  </nav>
+</header>
+<main>
+  <section id="home">
+  <div class="left-div">
+    <p class="welcome">
+      &#8594; Welcome to
+    </p>
+    <h1>
+      LUXURY LIFESTYLE
+    </h1>
+    <button>
+      <a href="/#category">View Catalogue &#8594;</a>
+    </button>
+  </div>
+
+<div class="right-div">
+  <div class="shape">
+  </div>
+</div>
+  </section>
+
+  <section id="category">
+    <h2>
+      Product Category
+    </h2>
+
+   <div id="categories"> 
+    <div class="kaftan">
+     <div class="kaftans">
+      <img src="img/Native  Large.jpeg" class="img1">
+      <p class="kaf">KAFTANS</p> 
+     </div> 
+
+
+    <div class="agbada">
+      <img src="img/Agbada Large.jpeg" class="img2">
+      <p class="agb">AGBADA</p>
+    </div>
+
+    <div class="caps">
+      <img src="img/Caps Large.jpeg" class="img3">
+      <p class="cap">CAPS</p>
+    </div>
+
+    <div class="suit">
+      <img src="img/Men in suit  Large.jpeg" class="img4">
+      <p class="sui">SUITS</p>
+    </div>
+
+    <div class="pants">
+      <img src="img/Pants Large.jpeg" class="img5">
+      <p class="pan">PANTS</p>
+    </div>
+
+    <div class="shirts">
+      <img src="img/Shirts Large.jpeg" class="img6">
+      <p class="shi">SHIRTS</p>
+    </div>
+
+    <div class="fabrics">
+      <img src="img/Fabrics Large.jpeg" class="img7">
+      <p class="fab">FABRICS</p>
+      
+    </div>
+    </div>
+   </div>
+  </section>
+
+  <section id="shop">
+    <form action="forms/subscribe.php" method="post">
+      <h2>
+        Shop Now
+      </h2>
+      <div class="container1">
+       <input type="text" name="Fullname" id="Fullname" placeholder="Full Name" required>
+       <input type="email" name="emailaddress" id="emailaddress" placeholder="Email address" required>
+       <input type="tel" name="Phonenumber" id="Phonenumber" placeholder="Phone number" required />
+       <select name="design" id="design" class="design" required>
+         <option value="design">Select Design Preference</option>
+         <option value="design">kaftan</option>
+         <option value="design">Agbada</option>
+         <option value="design">Pants</option>
+         <option value="design">Shirts</option>
+         <option value="design">Suit</option>
+         <option value="design">Caps</option>
+       </select>
+       <button type="submit">SUBMIT</button>
+       <p id="submission">ORDERS ADDED TO CART</p>
+       <p class="by">By clicking the button, you are agreeing to our  <a href="#">Terms and Services</a></p>
+      </div>
+     </form>
+  </section>
+
+  <section id="contact">
+    <img src="img/gmail.png">
+    <img src="img/instagram.png">
+    <img src="img/whatsapp.png">
+  </section>
+  <script src="main.js"></script>
+</main>
+
+</body>
+</html>
