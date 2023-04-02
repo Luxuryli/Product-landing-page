@@ -13,10 +13,10 @@
       <img src="img/Logo.png" class="logo">
   </nav>
   <nav class="right">
-      <a href="/#home" class="nav1">HOME</a>
-      <a href="/#category" class="nav2">PRODUCT CATEGORY</a>
-      <a href="/#shop" class="nav3">SHOP NOW</a>
-      <a href="/#contact" class="nav4">CONTACT</a>
+      <a href="#home" class="nav1">HOME</a>
+      <a href="#category" class="nav2">PRODUCT CATEGORY</a>
+      <a href="#shop" class="nav3">SHOP NOW</a>
+      <a href="#contact" class="nav4">CONTACT</a>
   </nav>
 </header>
 <main>
@@ -29,7 +29,7 @@
       LUXURY LIFESTYLE
     </h1>
     <button>
-      <a href="/#category">View Catalogue &#8594;</a>
+      <a href="#category">View Catalogue &#8594;</a>
     </button>
   </div>
 
@@ -40,50 +40,55 @@
   </section>
 
   <section id="category">
+  <div id="categories">
+      <div class="slideshow-container">
+       <div class="mySlides fade">
+         <img src="img/Native  Large.jpeg" class="img1">
+         <p class="kaf">KAFTANS</p> 
+       </div>
+       <div class="mySlides fade">
+         <img src="img/Agbada Large.jpeg" class="img2">
+         <p class="agb">AGBADA</p>
+       </div>
+       <div class="mySlides fade">
+         <img src="img/Caps Large.jpeg" class="img3">
+         <p class="cap">CAPS</p>
+       </div>
+        <div class="mySlides fade">
+        <img src="img/Men in suit  Large.jpeg" class="img4">
+        <p class="sui">SUITS</p>
+        </div>
+  
+        <div class="mySlides fade">
+        <img src="img/Pants Large.jpeg" class="img5">
+        <p class="pan">PANTS</p>
+        </div>
+  
+        <div class="mySlides fade">
+        <img src="img/Shirts Large.jpeg" class="img6">
+        <p class="shi">SHIRTS</p>
+        </div>
+        <div class="mySlides fade">
+          <img src="img/Fabrics Large.jpeg" class="img7">
+          <p class="fab">FABRICS</p>
+        </div>
+       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+       <a class="next" onclick="plusSlides(1)">&#10095;</a>
+     </div>
+     <br>
+     <div style="text-align:center">
+       <span class="dot" onclick="currentSlide(0)"></span>
+       <span class="dot" onclick="currentSlide(1)"></span>
+       <span class="dot" onclick="currentSlide(2)"></span>
+       <span class="dot" onclick="currentSlide(3)"></span>
+       <span class="dot" onclick="currentSlide(4)"></span>
+       <span class="dot" onclick="currentSlide(5)"></span>
+       <span class="dot" onclick="currentSlide(6)"></span>
+     </div>
+    </div>
     <h2>
       Product Category
     </h2>
-
-   <div id="categories"> 
-    <div class="kaftan">
-     <div class="kaftans">
-      <img src="img/Native  Large.jpeg" class="img1">
-      <p class="kaf">KAFTANS</p> 
-     </div> 
-
-
-    <div class="agbada">
-      <img src="img/Agbada Large.jpeg" class="img2">
-      <p class="agb">AGBADA</p>
-    </div>
-
-    <div class="caps">
-      <img src="img/Caps Large.jpeg" class="img3">
-      <p class="cap">CAPS</p>
-    </div>
-
-    <div class="suit">
-      <img src="img/Men in suit  Large.jpeg" class="img4">
-      <p class="sui">SUITS</p>
-    </div>
-
-    <div class="pants">
-      <img src="img/Pants Large.jpeg" class="img5">
-      <p class="pan">PANTS</p>
-    </div>
-
-    <div class="shirts">
-      <img src="img/Shirts Large.jpeg" class="img6">
-      <p class="shi">SHIRTS</p>
-    </div>
-
-    <div class="fabrics">
-      <img src="img/Fabrics Large.jpeg" class="img7">
-      <p class="fab">FABRICS</p>
-      
-    </div>
-    </div>
-   </div>
   </section>
 
   <section id="shop">
@@ -112,9 +117,19 @@
   </section>
 
   <section id="contact">
-    <img src="img/gmail.png">
-    <img src="img/instagram.png">
-    <img src="img/whatsapp.png">
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank">
+      <img src="img/gmail.png">
+      <p>Send a mail to us</p>
+    </a>
+    <a href="https://www.instagram.com/invites/contact/?i=1xvnpd1j1ayt9&utm_content=btuc8v9" target="_blank">
+      <img src="img/instagram.png">
+      <p>Follow us on Intagram</p>
+    </a>
+    <a href="https://wa.me/message/6UDNIJIPDMXNO1" target="_blank">
+      <img src="img/whatsapp.png">
+      <p>Send us a DM</p>
+    </a>
+ 
   </section>
   <script src="main.js"></script>
 </main>
